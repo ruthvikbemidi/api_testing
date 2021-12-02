@@ -17,7 +17,7 @@ models.Base.metadata.create_all(bind=engine)
 api = FastAPI()
 
 try:
-    connection = psycopg2.connect(host='localhost', database='accounts', user='postgres', password='bspr4215', cursor_factory=RealDictCursor)
+    connection = psycopg2.connect(host='hostname', database='name', user='username', password='password', cursor_factory=RealDictCursor)
     cursor = connection.cursor()
     print("Database connection is successfull!")
 except Exception as error:
